@@ -1,0 +1,312 @@
+
+.poke_det{    
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 0.75em;      
+    /* overflow: hidden;     */
+   }
+
+.poke_det_back-button {
+    text-decoration: none;     
+    font-size: 80px;
+    font-weight: bolder;
+    color: white;
+    z-index: 900;
+}
+
+
+.poke_det_back-button:hover{
+    transform: scale(1.2);
+}
+
+h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+
+.poke_det_sub_title{    
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding-top: 0.01em;    
+    margin: 0;    
+    color: white;
+}
+  
+.poke_det_name , .poke_det_num{          
+    padding: 0.5em 1em 0.5em;    
+    width: 35%;
+    height: 10%;
+    text-transform: capitalize;
+}
+
+
+.poke_det_name_extra{
+    font-size: 48px; 
+    color: white;    
+    line-height: 0.9;                
+    text-shadow: 
+    -3px -3px 0  magenta, 
+    -3px 3px 0 magenta, 
+    3px 3px 0 magenta, 
+    3px -3px 0 magenta; 
+  
+}
+
+.poke_det_sub_title, h2{
+    /* text-shadow: #007bff ; */
+}
+
+.poke_det_num_extra {
+    text-align: end;
+       
+}
+ 
+
+
+.container-card {
+    transition: all .7s;
+    background-color: var(--card_gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 14px 12px;
+}
+
+
+.poke_det_h_image{    
+    width: 100%;
+    height: 400px;    
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;    
+    z-index: 900;    
+} 
+
+ .poke_det_mimg{    
+    width: 100%;
+    max-width: 450px;
+    max-height: 450px;
+    margin: 0 auto;    
+    transition: transform 1s;
+    animation: pokemon 2s 1 linear;   
+    justify-content: center;
+    align-items: center;      
+} 
+
+
+@keyframes pokemon {
+    0%{
+      scale: .3;
+    }
+    50%{
+      scale: .7;
+    }
+    100%{
+      scale: 1;
+    }
+  }
+
+
+.poke_det_mimg:hover{
+    transform: scale(1.1);
+}
+
+.poke_det_map_cont{
+    display: flex;
+    gap: 0.5em;
+    text-transform: uppercase;
+    padding: 0.5em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 0.2em;  
+
+}
+
+.poke_det_tipe_format{
+    color: white;
+    border-radius: 7px;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em 0 3.5rem .5rem;
+    font-weight: 700
+}
+
+ .poke_det_tab{ 
+    margin: -30px  auto 0;
+    width: 100%;
+    background-color: #173f57;
+    border-radius: 15px;    
+    position: relative;
+    z-index: 2;       
+} 
+
+.poke_det_tab_desc{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+  
+}
+
+.poke_det_tab_item{    
+     background-color: #3b6e8d;
+     padding: 1rem 3rem;     
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     justify-content: center;
+     align-items: center;
+     font-size: 1.8rem;     
+     border-radius: 0 0 15px 15px;     
+     height: 77dvh;
+}
+
+.poke_det_tabl_title{
+    background-color: inherit;
+    width: 100%;
+    height: 100%;    
+    text-align: center;    
+    border-radius: 15px 15px 0 0;
+    padding: 0.8rem ;
+    margin: 0;
+    cursor: pointer;
+}
+
+.poke_det_subTitle{
+    font-size:  0.7em;
+    padding-bottom: 0.1em;
+    padding-right: 3em;
+}
+
+
+.poke_det_head h1 {
+    justify-content: center;
+}
+
+ .poke_det_h_hab {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 7px;
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em 1em 0.5em 1em;
+    margin-right: 0.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+ }
+ 
+
+
+ .poke_det_c-stats{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);    
+    justify-items: center;
+    gap: 0.5em;
+    padding-bottom: 0.1em;
+   }
+
+
+   .poke_det_c-items{
+    text-align: center;
+    color: #8ecae6;
+  }
+ 
+  .poke_det_c-items span:first-child{
+   display: block;
+   font-size: 1.5rem;
+   color: #ffb703;
+  }
+
+
+  .poke_det_moves{
+    padding: 1rem 3rem;    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+
+  .poke_det_moves p   {
+    background-color: rgba(255, 255, 255, 0.521);
+    padding: .1rem .3rem;
+    border-radius: 1rem;
+}
+
+.grass  {
+    background-color: #CAE099;
+  
+}
+
+.poison  {
+    background-color: #5B3184;
+      
+}
+
+.fire {
+    background-color: #F96D6F;
+}
+
+.normal  { background-color: #735259}
+.fighting { background-color: #96402A}
+.flying { background-color: #3A75BB }
+.ground { background-color: #654008 }
+.rock { background-color: #7E7E7E }
+.bug { background-color:  #62DB60}
+.ghost { background-color: #323569}
+.steel { background-color:  #5E736C}
+.fire { background-color: #F96D6F }
+.water { background-color: #133258 }
+.electric{
+    background-color:   #0C1395 ; 
+   
+   }
+.psychic{
+    background-color:   #E52D2D ; 
+   
+   }
+.ice{
+    background-color:   #6FBEDF ; 
+   
+   }
+.dragon{
+    background-color:   #478A93 ; 
+   
+   }
+.fairy{
+    background-color:   #971B45 ; 
+   }  
+   
+   
+.flying{
+    background-color:   #A98FF3 ;  
+   
+   }
+.dark{
+    background-color:   #47476B ; 
+   
+   }
+.stellar{
+    background-color:   #F8F8FF ; 
+   }
+.unknown{
+    background-color:   #68A090 ; 
+   }
+.shadow{
+    background-color:   #4A4458 ; 
+   }

@@ -1,0 +1,65 @@
+
+
+ /*home*/
+ .home{
+    display: grid;
+    place-content: center;
+    height: 100dvh;
+    background-image: url('src/assets/img/home_bg.jpg');
+   }
+  
+   .home_pokedex{
+    top:0;
+    width: 60%;
+    height: auto;
+    padding: 0;
+    max-width: 1024px;
+   }
+  .home__input{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0.5em 1em;
+    border-radius: 4px 0 0 4px;
+    margin-left: 1.2em;
+  }
+  
+   .home__btn{
+    background-color: red;
+    border: transparent;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0 4px 4px 0;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  
+   }
+  
+   .home__btn:hover{
+    background-color: #b33030;
+    
+   }
+   
+   .home__link{
+    color: #b33030;
+    font-weight: 700;
+    text-decoration: none;
+   }
+  
+   .btn-radiuos{
+    border-radius: 4px  ;
+    margin-left: 1.2em;
+    
+   }
+  
+   .home__title, .home__text{  
+    margin-bottom: 0.5em;
+    padding: .2em 1em .2em 1em;
+   }
+
+   .home_user{
+    font-family:'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    color: #b33030;
+    text-transform: capitalize;
+   }

@@ -1,0 +1,17 @@
+
+.select{
+    background-color: #fff;
+    
+    padding: 0.5em 1em;
+    border-radius: 4px 0 0 4px;
+    display: flex;
+    align-items: center;
+    gap : 0.25em;
+   }
+
+
+   .select input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+   }
