@@ -12,6 +12,8 @@
 
   --color-secondary  : #fff;
   --color-danger : red;
+  --color-primary: #2c7da0;
+  --color-septenary: #bde0fe;
 }
   
 *, *::before, *::after {
@@ -24,3 +26,13 @@ body {
   
 }
    
+footer{  
+  background-color: var(--color-primary);
+  color: var(--color-septenary);
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+  bottom: 0;
+  z-index: 0;
+}

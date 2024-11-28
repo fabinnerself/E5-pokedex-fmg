@@ -1,69 +1,73 @@
 # Ultimate Pokemon Bestiary Go 
 
-## ¡Ultimate Pokemon Bestiary Go!
+## Pokedex!
 
-Esta aplicación web, construida con ReactJS y Vite, te permite buscar y listar monstruos de la serie pokemon. Tiene paginacion en los registros. Uso de iconos react-icons.github.io, uso de ventanas modales para mensajes de alerta en las operaciones. COnsume una rest api de pokemon (https://pokeapi.co/).
-![main](crud-user-main.png)
+This web application, built with ReactJS and Vite, allows you to search and list monsters from the Pokemon series. It features pagination for records, uses react-icons.github.io icons, and modal windows for alert messages. It consumes a Pokemon REST API (https://pokeapi.co/).
 
+![main](pokedex.png)
 
-## Caracteristicas
+## Features
 
-- **Rutas publicas y protegidas:** Rutas publicas y protegidas con react-router-dom.
+- **Public and Protected Routes:** Using react-router-dom for route management.
 
-- **Interfaz intuitiva:** Diseño moderno responsivo y fácil de usar, optimizado para diferentes dispositivos.
+- **Intuitive Interface:** Modern, responsive, and user-friendly design, optimized for different devices.
 
-- **Componentes reutilizables:** : Estructura modular del código para facilitar el mantenimiento.
+- **Reusable Components:** Modular code structure for easy maintenance.
 
-- **Hooks:** Utiliza los hooks useState, useEffect, useRef, react-router-dom, UseReducer, Global State, routes y Custom hook personalizado para la conexión a la rest api y paginacion. 
+- **Hooks:** Utilizes hooks including useState, useEffect, useRef, react-router-dom, UseReducer, Global State, routes, and a custom hook for API connection and pagination.
 
-- **CSS:**  Estiliza la aplicación. 
+- **Languages:** Enjoy the experience in your preferred language, including German, Italian, Turkish, and English.
 
-- **ReactJS:**  Framework JavaScript para crear interfaces de usuario. 
+- **CSS:** Styling for the application.
 
-- **Vite:**  Herramienta de construcción de frontend rápida y basada en ES modules. 
+- **ReactJS:** JavaScript framework for creating user interfaces.
 
-- **Iconos react-icons.github.io:** : Iconos personalizados para mejorar la interfaz.
+- **Vite:** Fast frontend build tool based on ES modules.
 
-- **Licencia:**  MIT se puede usar para cualquier proyecto personal o comercial mientras se mantenga este README.md, mi nombre y la licencia MIT.
- 
-Puedes visitar la plataforma en línea en [https://crud-users-fmg.vercel.app/](https://crud-users-fmg.vercel.app/)
+- **react-icons.github.io Icons:** Custom icons to enhance the interface.
 
-## Requisitos del Sistema
+- **License:** MIT, can be used for any personal or commercial project while maintaining this README.md, the author's name, and the MIT license.
 
-- **Sistema Operativo:** Ubuntu 22.04.4 LTS o Windows 10 Pro 1803 
+You can visit the online platform at [https://pokedex-fmg.vercel.app/](https://pokedex-fmg.vercel.app/)
 
-- **NodeJS:** Versión 18.20.4 o superior 
+## System Requirements
 
-- **npm/npx:** Versión 10.8.4 o superior 
+- **Operating System:** Ubuntu 22.04.4 LTS or Windows 10 Pro 1803 
 
-- **Vite::** version 5.4 o superior 
+- **NodeJS:** Version 18.20.4 or higher 
 
-- **ReactJs:** vesion 18.3 o superior 
+- **npm/npx:** Version 10.8.4 or higher 
+
+- **Vite:** Version 5.4 or higher 
+
+- **ReactJs:** Version 18.3 or higher
     
-## Sistemas Alternativos Probados
+## Alternative Systems Tested
 
-El proyecto también ha sido probado en el siguiente entorno alternativo:
+The project has also been tested in the following alternative environment:
 
-- **Sistema Operativo:** Windows 10 Pro 1803
+- **Operating System:** Windows 10 Pro 1803
 
-- **NodeJS:** NodeJS: 18.20.4
+- **NodeJS:** 18.20.4
 
-- **npm/npx:** Versión 10.8.4 o superior 
+- **npm/npx:** Version 10.8.4 or higher 
 
-- **Vite:** version 5.4 o superior 
+- **Vite:** Version 5.4 or higher 
 
-- **ReactJs:** vesion 18.3 o superior 
+- **ReactJs:** Version 18.3 or higher 
 
-## Contribuciones
-Las contribuciones son bienvenidas. Si encuentras algún error o deseas agregar nuevas funcionalidades, no dudes en abrir un issue, una pull  request, o fork en el repositorio.
+## Contributions
+Contributions are welcome. If you find any errors or wish to add new features, feel free to open an issue, pull request, or fork the repository.
 
-## Imagenes
+## Images
 
-Pantalla  detalle pokemon ![main](crud.png)
+Pokemon detail screen 
 
-## Comandos Útiles
+![main](poke_det.png)
 
-Ver información del sistema:
+## Useful Commands
+
+View system information:
 
 uname -r
 
@@ -73,48 +77,75 @@ node -v
 
 npm -v
 
-## Estructura del proyecto
+## Project Structure
 
-La estructura del proyecto es:
+The project structure is:
 ```
 index.html
 readme.md
 └── src/
-    ├── App.jsx
-    ├── App.css
-    ├── index.css
-    ├── components/
-    │   ├── AddEdit.jsx
-    │   └── Modal.jsx
-    │   └── UserList.jsx
-    │   └── Search.jsx
-    │   └── UserCard.jsx
-    ├── hooks/
-    │   ├── useFetch.jsx
-    │   └── usePagination.jsx
-    ├── layout/        
-    │   └── Layout.jsx
-    └──  assets/
-        └── img/
-           └── header-img.png
-
+├── index.css
+├── main.jsx
+├── app/
+│   ├── Detail.jsx
+│   ├── Home.jsx
+│   ├── index.js
+│   └── pokdex.jsx
+├── containers/
+│    └── languaje.jsx
+├── contexts/
+│    └── nameContext.jsx
+├── languajes/
+│    ├──── de.json
+│    ├──── en.json
+│    ├──── es.json
+│    ├──── index.js
+│    ├──── it.json
+│    └──── tr.json
+├── routes/
+│    ├──── AppRouters.jsx
+│    └──── ProtectedRoutes.jsx
+├── styles/
+│    ├──── details.css
+│    ├──── filters.css
+│    ├──── home.css
+│    ├──── nofound.css
+│    ├──── pokeCard.css
+│    ├──── pokedex.css
+│    ├──── pokelist.css
+│    └──── search.css
+├── components/
+│    ├── LanguageSelector.jsx
+│    ├── LanguageSelector.jsx
+│    └── pokedex/
+│        ├── Filtes.jsx
+│        ├── notfound.jsx
+│        ├── PokemoCard.jsx
+│        ├── PokemonList.jsx
+│        ├── Search.jsx
+│        ├── Search.jsx
+│        └── UserCard.jsx
+├── hooks/
+│   └── useFetch.jsx
+├── layout/
+│   └── Layout.jsx
+└──  assets/
+└── img/
+├── home_bg.png
+├── pokedex.png
+└── hero.png
 ```
-# Instalación
+# Installation
 
-Para instalar bajar el proyecto del repositorio:
+To install, download the project from the repository:
 
 ```bash
+git clone https://github.com/fabinnerself/E5-pokedex-fmg.git
 
-git clone https://github.com/fabinnerself/s04e04-crudUsers-fmg.git
+Then run:
+
+cd E5-pokedex-fmg
+
+npm i axios react-icons react-router-dom
 ```
-
-```bash
-
-luego correr:
-
-cd  s04e04-crudUsers-fmg
-
-npm i axios  react-icons react-router-dom   react-icons
-```
-
-(C) Favian M.G. 2024 
+(C) Favian M.G. 2024

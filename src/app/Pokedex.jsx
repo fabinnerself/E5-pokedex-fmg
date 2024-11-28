@@ -12,6 +12,7 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 import { FiLoader } from "react-icons/fi";
 import { BiSolidErrorAlt } from "react-icons/bi";
 import './../styles/pokedex.css'
+import Layout from '../layouts/Layout'
 
 function Pokedex() {
 
@@ -74,6 +75,7 @@ const onFirst = () => {
   const pokemonArray = isFilering ? pokemons?.pokemon : pokemons?.results
 
   return ( 
+    <Layout>
     <div className='pokedex'>
       <div className='pokedex__container'>
       <div className='pokedex__header'>
@@ -108,7 +110,7 @@ const onFirst = () => {
           </div>
       </div>  
       </div>        
-    </div>
+    </div></Layout>
   )
 }
 

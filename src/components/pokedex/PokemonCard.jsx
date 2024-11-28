@@ -1,15 +1,16 @@
-import React, { Fragment } from 'react'
+import React, { Fragment,useContext } from 'react'
 import { useFetch } from '../../hooks/useFetch'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { tipos } from '../../utils/helpers'
 import { FiLoader } from "react-icons/fi";
-import { Text } from './../../containers/Language';
+import { Text, LanguageContext} from './../../containers/Language';
 import './../../styles/pokeCard.css'
 
 function PokemonCard({url}) {
 
   const [pokemon, setPokemon   ] = useFetch(url)
+  const { dictionary } = useContext(LanguageContext);
 
   useEffect(()=>{
     if(url){
@@ -32,7 +33,7 @@ function PokemonCard({url}) {
     <Link className='poke' to={`/pokedex/details/${pokemon?.name}`}>
     <div className={`poke_card type--${tipes[0]}`}>   
         <div className='poke_card-header'>
-        <img src={pokemon?.sprites?.other?.dream_world?.front_default} alt={pokemon?.name}   />
+        <img src={pokemon?.sprites?.other?.['official-artwork']?.front_default} alt={pokemon?.name}   />
              
         </div>   
       <div className='poke_card-body'>
@@ -41,13 +42,13 @@ function PokemonCard({url}) {
         {tipes?.map((type,index)=>{
           const id = Date.now()+Math.random()        
           return (<Fragment key={id}>
-            {index > 0 ? (<>{" / "} <span>{tipos[type]}</span></>) :
-            (<span>{tipos[type]}</span>)
+            {index > 0 ? (<>{" / "} <span>{dictionary[type]}</span></>) :
+            (<span>{dictionary[type]}</span>)
             }        
           </Fragment>)
         })}
         </span>
-        <p className='poke_card-label'  >Tipo</p>      
+        <p className='poke_card-label'  ><Text tid="d_t_1" /></p>      
       </div>
       <div className='poke_card-stats'>
         <div className="poke_card-items">

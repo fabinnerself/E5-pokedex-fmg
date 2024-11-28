@@ -1,8 +1,8 @@
-import React ,{ useEffect, useState } from 'react'
+import React ,{ useEffect, useState ,useContext } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useFetch } from '../hooks/useFetch'
 import { tipos } from '../utils/helpers'
-import { Text  } from '../containers/Language';
+import { Text , LanguageContext } from '../containers/Language';
 import { LiaRulerVerticalSolid } from "react-icons/lia";
 import { FaWeightScale } from "react-icons/fa6";
 import { MdKeyboardArrowLeft } from "react-icons/md";
@@ -13,6 +13,7 @@ function Details() {
     const params = useParams()
     const [pokemon, setPokemon] = useFetch()     
     const [activeTab, setActiveTab] = useState('caracteristicas');
+    const { dictionary } = useContext(LanguageContext);
 
     let type_Css ="normal"
 
@@ -46,10 +47,10 @@ function Details() {
                 return (<>
                 <div className='poke_det_tab_item'>  
                         <span>
-                            <img className="poke_det_mimg" src={pokemon?.sprites?.other?.dream_world?.front_default} alt={pokemon?.name}   /> 
+                            <img className="poke_det_mimg" src={pokemon?.sprites?.other?.['official-artwork']?.front_default} alt={pokemon?.name}   /> 
                                                
                             <span className='poke_det_map_cont' >{tipes?.map(type => (                            
-                                <span key={type} className={`poke_det_tipe_format ${type}`}>{tipos[type]}</span>
+                                <span key={type} className={`poke_det_tipe_format ${type}`}>{dictionary[type]}</span>
                             ))}</span>   
                         </span>
                 </div>                
