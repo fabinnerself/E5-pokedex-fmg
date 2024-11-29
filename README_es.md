@@ -2,7 +2,7 @@
 
 ## Pokedex App!
 
-Esta aplicación web, construida con ReactJS y Vite, te permite buscar y listar monstruos de la serie pokemon. Tiene paginacion en los registros. Uso de iconos react-icons.github.io, uso de ventanas modales para mensajes de alerta en las operaciones. COnsume una rest api de pokemon (https://pokeapi.co/).
+Esta aplicación web, construida con ReactJS y Vite, permite buscar y listar monstruos de la serie Pokemon. Cuenta con paginación para los registros, utiliza  react-icons, cambiador de tema y multi idioma. Consume una API REST de Pokemon(https://pokeapi.co/).
 
 ![main](pokedex.png)
 
@@ -11,15 +11,15 @@ Esta aplicación web, construida con ReactJS y Vite, te permite buscar y listar 
 
 - **Rutas publicas y protegidas:** Rutas publicas y protegidas con react-router-dom.
 
-- **Interfaz intuitiva:** Diseño moderno responsivo y fácil de usar, optimizado para diferentes dispositivos.
+- **Interfaz intuitiva:**  Diseño moderno responsivo y fácil de usar, optimizado para diferentes dispositivos.
 
-- **Componentes reutilizables:** : Estructura modular del código para facilitar el mantenimiento.
+- **Componentes reutilizables:**  Estructura modular del código para facilitar el mantenimiento.
 
-- **Hooks:** Utiliza los hooks useState, useEffect, useRef, react-router-dom, UseReducer, Global State, routes y Custom hook personalizado para la conexión a la rest api y paginacion. 
+- **Hooks:**  Utiliza los hooks useState, useEffect, useRef, react-router-dom, Global State, routes, custom hook for API connection, y rutas protegidas. 
 
-- **Idiomas: ** Disfruta de la experiencia en tu idioma preferido inclueyndo Aleman, Italiano, Turco, e Ingles. 
+- **Idiomas:**  Disfruta de la experiencia en tu idioma preferido inclueyndo Aleman, Italiano, Turco, e Ingles. 
 
-- **Cambio de Tema :** permite cambiar entre temas claro, oscuro y coloreado. 
+- **Cambio de Tema:** Permite cambiar entre temas claro, oscuro y coloreado. 
 
 - **CSS:**  Estiliza la aplicación. 
 
