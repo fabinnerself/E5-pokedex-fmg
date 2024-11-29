@@ -2,7 +2,7 @@
 
 ## Pokedex!
 
-This web application, built with ReactJS and Vite, allows you to search and list monsters from the Pokemon series. It features pagination for records, uses react-icons.github.io icons, and modal windows for alert messages. It consumes a Pokemon REST API (https://pokeapi.co/).
+This web application, built with ReactJS and Vite, allows you to search and list monsters from the Pokemon series. It features pagination for records, uses react-icons.github.io icons, them changer. It consumes a Pokemon REST API (https://pokeapi.co/).
 
 ![main](pokedex.png)
 
@@ -17,6 +17,8 @@ This web application, built with ReactJS and Vite, allows you to search and list
 - **Hooks:** Utilizes hooks including useState, useEffect, useRef, react-router-dom, UseReducer, Global State, routes, and a custom hook for API connection and pagination.
 
 - **Languages:** Enjoy the experience in your preferred language, including German, Italian, Turkish, and English.
+
+- **Theme Changer:** Allows to change between Light, Dark and colorful themes. 
 
 - **CSS:** Styling for the application.
 

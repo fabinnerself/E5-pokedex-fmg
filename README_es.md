@@ -17,7 +17,9 @@ Esta aplicación web, construida con ReactJS y Vite, te permite buscar y listar 
 
 - **Hooks:** Utiliza los hooks useState, useEffect, useRef, react-router-dom, UseReducer, Global State, routes y Custom hook personalizado para la conexión a la rest api y paginacion. 
 
--**Idiomas**  Disfruta de la experiencia en tu idioma preferido inclueyndo Aleman, Italiano, Turco, e Ingles. 
+- **Idiomas: ** Disfruta de la experiencia en tu idioma preferido inclueyndo Aleman, Italiano, Turco, e Ingles. 
+
+- **Cambio de Tema :** permite cambiar entre temas claro, oscuro y coloreado. 
 
 - **CSS:**  Estiliza la aplicación. 
 
