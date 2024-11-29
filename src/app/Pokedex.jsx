@@ -6,14 +6,16 @@ import { useFetch } from '../hooks/useFetch'
 import PokemonList from '../components/pokedex/PokemonList'
 import PokemonCard from '../components/pokedex/PokemonCard'
 import { useNameContext } from '../contexts/nameContext'
+import Menu from '../components/Menu';
 import { Text } from '../containers/Language';
 import LanguageSelector from '../components/LanguageSelector';
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { FiLoader } from "react-icons/fi";
 import { BiSolidErrorAlt } from "react-icons/bi";
-import Menu from '../components/Menu';
-import './../styles/pokedex.css'
+
 import Layout from '../layouts/Layout'
+
+import './../styles/pokedex.css'
 
 function Pokedex() {
 
@@ -96,10 +98,15 @@ const onFirst = () => {
         </div>
 
         <div className='pokedex__form'>
-            <Search handleSearch={handleSearch} />
-            <Filters handleTypeFilter={handleTypeFilter} />
-            <LanguageSelector />
-            <Menu onThemeChange={handleThemeChange} />
+            <div className='pokedex__form-row'>
+                <Search handleSearch={handleSearch} />
+                <Filters handleTypeFilter={handleTypeFilter} />
+            </div>
+            <div className='pokedex__form-row'>
+              <LanguageSelector />
+              <Menu onThemeChange={handleThemeChange} />
+            </div>
+           
         </div>
           
         <div className='pokedex__paginate' >
