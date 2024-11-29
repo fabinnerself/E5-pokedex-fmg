@@ -1,8 +1,6 @@
 import React, {useContext, useEffect , useRef } from 'react'
 import { useFetch } from '../../hooks/useFetch'
-import { tipos } from '../../utils/helpers'
 import { Text, LanguageContext } from './../../containers/Language';
-
 import './../../styles/filters.css'
 
 function Filters({ handleTypeFilter }) {

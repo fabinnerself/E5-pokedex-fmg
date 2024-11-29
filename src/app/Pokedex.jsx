@@ -11,6 +11,7 @@ import LanguageSelector from '../components/LanguageSelector';
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { FiLoader } from "react-icons/fi";
 import { BiSolidErrorAlt } from "react-icons/bi";
+import Menu from '../components/Menu';
 import './../styles/pokedex.css'
 import Layout from '../layouts/Layout'
 
@@ -74,6 +75,13 @@ const onFirst = () => {
   
   const pokemonArray = isFilering ? pokemons?.pokemon : pokemons?.results
 
+  const [theme, setTheme] = useState('light');
+
+  const handleThemeChange = (newTheme) => {
+    setTheme(newTheme);
+    document.body.className = newTheme; 
+  };
+
   return ( 
     <Layout>
     <div className='pokedex'>
@@ -91,6 +99,7 @@ const onFirst = () => {
             <Search handleSearch={handleSearch} />
             <Filters handleTypeFilter={handleTypeFilter} />
             <LanguageSelector />
+            <Menu onThemeChange={handleThemeChange} />
         </div>
           
         <div className='pokedex__paginate' >

@@ -3,11 +3,13 @@ import { Home , Pokedex , Details } from "../app/"
 import ProtectedRoutes from "./ProtectedRoutes"
 import NotFound from "../components/pokedex/NotFound"
 import { LanguageProvider } from '../containers/Language';
+import '../index.css';
  
 function AppRouter() {
+   
 
   return (
-    <LanguageProvider>
+    <LanguageProvider>      
       <Routes>
         <Route path="/" element={<Home />} />   
         <Route path="/pokedex" element={<ProtectedRoutes />}>   

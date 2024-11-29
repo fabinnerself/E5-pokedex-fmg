@@ -57,6 +57,9 @@
   "fairy"     :"fairy",    
   "stellar"   :"stellar",
   "unknown"   :"unknown",
-  "s_b":"Search"
+  "s_b":"Search",
+  "Claro":"Light",
+  "Oscuro":"Dark",
+  "Colorido":"Colorful"
   
 }

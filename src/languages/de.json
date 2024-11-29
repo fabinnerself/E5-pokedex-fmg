@@ -57,5 +57,8 @@
   "fairy": "fee",
   "stellar": "stern",
   "unknown": "unbekannt"  ,
-  "s_b":"suchen"
+  "s_b":"suchen",
+  "Claro": "Hell",
+  "Oscuro": "Dunkel",
+  "Colorido": "Bunt"
 }

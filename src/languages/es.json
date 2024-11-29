@@ -58,5 +58,8 @@
   "stellar": "estelar",
   "unknown": "desconocido",
   "shadow": "sombra"  ,
-  "s_b":"Buscar"
+  "s_b":"Buscar",
+  "Claro":"Claro",
+  "Oscuro":"Oscuro",
+  "Colorido":"Colorido"
 }
